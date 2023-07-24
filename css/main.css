@@ -173,6 +173,11 @@ header{
     margin: auto;
 }
 
+.btn-primary {
+    background-color: #0a141d;
+ 
+  }
+
 footer{
     width: 100%;
     background-color: #0a141d;
@@ -331,7 +336,7 @@ footer .footer-grupo1 .box .red-social a:hover{
     .container-pages-2 h2{
         font-size: 2rem;
     }
-    
+
     .container-pages-2 p{
         font-size: 1rem;
     }
