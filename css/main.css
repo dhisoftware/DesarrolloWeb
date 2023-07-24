@@ -95,7 +95,16 @@ header{
     background-size: cover;
     background-position: center;
     height: 100vh; /* Contenedor-1 ocupará el 100% de la altura de la ventana */
+    display: grid;
+    grid-template-rows: 90px auto;
 }
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+ 
 
 .container-titulo{
     display: flex;
@@ -140,9 +149,9 @@ header{
     background-size: cover;
     background-position: center;
     /*height: 100vh; /* Contenedor-1 ocupará el 100% de la altura de la ventana */
-    display: flex;
-    flex-direction: column;
     height: 100vh; 
+    display: grid;
+    grid-template-rows: 90px auto;
 }
 
 .container-pages-2{
@@ -150,7 +159,12 @@ header{
     width: 80%;
     margin: auto;
     color: #c4c4c4;
+    
 }
+.contacto{
+    max-width: 600px;
+}
+ 
 
 .container-pages-2 h2{
     font-size: 3rem;
