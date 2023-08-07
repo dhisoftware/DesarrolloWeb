@@ -143,12 +143,12 @@ main .container-titulo h1 {
   font-size: 3rem;
 }
 main .container-titulo p {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   text-align: center;
 }
 @media screen and (max-width: 900px) {
   main .container-titulo p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 }
 @media screen and (max-width: 900px) {
