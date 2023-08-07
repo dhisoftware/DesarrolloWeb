@@ -1,0 +1,68 @@
+main{
+    @extend %flex-column-center;
+
+    .container-titulo{
+        @extend %flex-column-center;
+        align-items: center;
+        height: 50%;
+        color: #c4c4c4;  
+        padding: 2rem;  
+        -webkit-animation: slide-in-blurred-top 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) 1s both;
+        animation: slide-in-blurred-top 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) 1s both;
+
+        h1{
+            font-size: 3rem;
+        }
+
+        p{
+            font-size: 1.5rem;
+
+            @include tablet{
+                font-size: 1.2rem;
+                
+            }
+        }
+
+        @include tablet{
+            color: white;
+            height: 40%;
+        }
+    }
+
+    .container-servicios{
+        display: flex;
+        width: 80%;
+        margin: auto;
+        gap: 20px;
+        
+        .cont-servicios{
+            width: 30%;
+            text-align: center;
+            -webkit-animation: slide-in-blurred-top 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) 1s both;
+            animation: slide-in-blurred-top 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) 1s both;
+            h2{
+                color: #c4c4c4;
+            }
+            p{
+                color: #c4c4c4;
+            }
+
+            @include tablet{
+                width: 100%;
+                text-align: left; 
+            }
+        }
+
+        @for $item from 1 through 3 {
+            .cont-serv#{$item} {
+                animation-delay: $item*.3s;
+            }
+        }
+        
+        @include tablet{
+            flex-direction: column;
+            flex-wrap: wrap;    
+        }
+       
+    }
+}

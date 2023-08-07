@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
         <link type="image/png" sizes="32x32" rel="icon" href="./images/Favicon.png">
     <title>DHI Software</title>
 </head>
@@ -29,11 +30,48 @@
         </header>
         
           <div class="container-pages-2">
-            <h1>Servicios</h1>    
+            <h2>Servicios</h2>    
             <p>Desde el desarrollo de software personalizado hasta la implementación de sistemas de gestión y soluciones en la nube, nuestra experiencia y enfoque centrado en el cliente nos permiten ofrecer herramientas avanzadas que impulsarán la eficiencia, productividad y competitividad de tu negocio.</p>
           </div>
         
     </div><!-- container-pages -->
+
+    <main>
+      <div class="container px-4 py-5" id="hanging-icons">
+        <h2 class="pb-2 border-bottom">Nuestros Servicios</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+          <div class="col d-flex align-items-start">
+            <div class="cont-tarjetas">
+              <div data-aos="fade-right">
+                <img class="img-producto-sif" src="../images/configurable.jpg" alt="producto-sif">
+              </div>
+              <h3 class="fs-2 text-body-emphasis">Soluciones configurables</h3>
+              <p>Con una arquitectura modular que se basa en bloques de funcionalidades independientes, lo que permite que cada módulo pueda funcionar por sí solo o en conjunto con otros. De esta manera, nuestros clientes tienen la flexibilidad de incorporar nuevas características o funcionalidades según lo requieran, sin afectar el funcionamiento general del sistema.
+                La interfaz intuitiva de nuestros sistemas garantiza una experiencia de usuario amigable y accesible. Esto facilita la navegación y el uso del software, lo que a su vez reduce el tiempo de capacitación y facilita la adopción de la tecnología por parte de los usuarios..</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div class="cont-tarjetas">
+              <div data-aos="fade-down-left">
+                <img class="img-producto" src="../images/desarrollomedida.jpg" alt="producto-inmos">
+              </div>
+              <h3 class="fs-2 text-body-emphasis">Desarrollo a medida</h3>
+              <p>Trabajamos estrechamente con cada cliente para comprender a fondo sus necesidades y desafíos. A través de un proceso de consultoría detallado, identificamos los requisitos clave y las funcionalidades necesarias para crear la solución más adecuada.
+                Una vez que hemos recopilado todos los detalles, nuestro equipo se pone manos a la obra para diseñar, desarrollar e implementar la solución personalizada. Con un enfoque ágil y colaborativo garantizamos que nuestros clientes estén involucrados en cada etapa del proceso, lo que nos permite realizar ajustes y mejoras en tiempo real para garantizar que la solución final supere sus expectativas.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div class="cont-tarjetas">
+              <div data-aos="fade-left">
+                <img class="img-producto" src="../images/acesoramiento.jpg" alt="producto-school">
+              </div>
+              <h3 class="fs-2 text-body-emphasis">Asesoramiento y consultoría</h3>
+              <p>Ofrecemos servicios especializados de asesoramiento y consultoría tanto en hardware como en software para proporcionar soluciones integrales a nuestros clientes. Nuestro equipo de expertos en tecnología está capacitado para brindar asesoramiento en diversas áreas, desde la selección y adquisición de hardware hasta la implementación y optimización de software, garantizando que nuestros clientes tomen decisiones informadas y estratégicas..</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <footer>
         <div class="footer-grupo1">
@@ -53,9 +91,9 @@
           <div class="box">
             <h2>Síguenos</h2>
             <div class="red-social">
-              <a href="https://es-la.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
-              <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
-              <a href="https://twitter.com/?lang=es" target="_blank"><i class="bi bi-twitter"></i></a>
+              <a class="rs-facebook" href="https://es-la.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+              <a class="rs-instagram"  href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+              <a class="rs-twitter"  href="https://twitter.com/?lang=es" target="_blank"><i class="bi bi-twitter"></i></a>
             </div>
           </div>
         </div>
@@ -66,5 +104,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="../scripts/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

@@ -1,0 +1,15 @@
+$colorFondo: #0a141d;
+
+$redesColores: (
+    facebook: #1877F2,
+    instagram: #E4405F,
+    twitter: #1DA1F2,
+);
+
+//placeholder
+%flex-column-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
